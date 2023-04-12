@@ -224,7 +224,7 @@ class RekognitionImage:
 @app.post("/compare_faces")
 def usage_demo(url: Url):
     rekognition_client = boto3.client('rekognition', 'ap-south-1')
-    reference_image = 'https://res.cloudinary.com/dpfpkqvne/image/upload/v1675183960/test_image.jpg'
+    reference_image = 'YOUR_REFERENCE_IMAGE_URL'
     new_image = url.url
 
     girl_image_response = requests.get(reference_image)
